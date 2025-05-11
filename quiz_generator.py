@@ -3,7 +3,7 @@ import json
 import re
 
 # Set the API key for the Gemini model (Google AI Studio)
-genai.configure(api_key="AIzaSyB2eSiQ0WwlmCRFcDiJaNYMvZVamd58RhU")
+genai.configure(api_key="")
 
 def generate_quiz(topic, num_questions=10):
     """
