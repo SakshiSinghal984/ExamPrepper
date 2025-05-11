@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # Set your Google Gemini API key
-genai.configure(api_key="AIzaSyB2eSiQ0WwlmCRFcDiJaNYMvZVamd58RhU")
+genai.configure(api_key="")
 
 def chatbot_response(user_input):
     """
