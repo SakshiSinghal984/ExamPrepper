@@ -130,12 +130,6 @@ def generater_quiz():
 # =============================
 
 # MySQL connection config
-db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="sql24__",
-    database="db_papers"
-)
 
 @app.route('/previous_papers', methods=['POST'])
 def previous_papers():
