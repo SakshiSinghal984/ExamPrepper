@@ -1,28 +1,6 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
-import {
-  getAuth,
-  // signInWithPopup,
-  // GoogleAuthProvider,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword
-} from "https://www.gstatic.com/firebasejs/11.7.1/firebase-auth.js";
-
 // Firebase config
-const firebaseConfig = {
-    apiKey: "AIzaSyBVtNaYdhWwKTQScofP30Gt0qLYFkrAosc",
-    authDomain: "examprepper-c04b8.firebaseapp.com",
-    projectId: "examprepper-c04b8",
-    storageBucket: "examprepper-c04b8.firebasestorage.app",
-    messagingSenderId: "490926880545",
-    appId: "1:490926880545:web:3327946715d25b39903060",
-    measurementId: "G-H8K0DE9T7S"
-
-};
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-// const provider = new GoogleAuthProvider();
 
 let isSignUp = false;
 
@@ -54,9 +32,3 @@ document.getElementById("authForm").addEventListener("submit", (e) => {
       .catch((error) => alert("Login failed: " + error.message));
   }
 });
-
-// document.getElementById("googleLoginBtn").addEventListener("click", () => {
-//   signInWithPopup(auth, provider)
-//     .then(() => window.location.href = "/home")
-//     .catch((error) => alert("Google Sign-In failed: " + error.message));
-// });
